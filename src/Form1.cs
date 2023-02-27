@@ -7,7 +7,6 @@ namespace Snake
     {
         Rectangle fruit;
         List<Rectangle> snake = new List<Rectangle>();
-        Form F2;
         bool right = true;
         bool left = false;
         bool up = false;
@@ -136,6 +135,7 @@ namespace Snake
             {
                 SettingsData.dx = SettingsData.dx - SettingsData.snakeSize;
             }
+            
             snake.Insert(0, (new Rectangle(SettingsData.dx, SettingsData.dy, SettingsData.snakeSize, SettingsData.snakeSize)));
             for (int i = 1; i < snake.Count; i++)
             {
@@ -147,6 +147,7 @@ namespace Snake
                 }
 
             }
+            
             if (snake[0].IntersectsWith(fruit))
             {
                 count++;
@@ -166,12 +167,21 @@ namespace Snake
                 snake.Insert(0, (new Rectangle(SettingsData.dx, SettingsData.dy, SettingsData.snakeSize, SettingsData.snakeSize)));
             }
             
-            
             if (snake[0].IntersectsWith(fruit) == false)
             {
                 snake.RemoveAt(snake.Count - 1);
             }
             panel1.Invalidate();
+        }
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            lblGame.Visible = !lblGame.Visible;
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            seconds++;
+            lblTime.Text = "Time passed: " + seconds;
         }
 
         /*int[] directionCheck()
@@ -196,20 +206,10 @@ namespace Snake
             return tailReturn;
         }*/
 
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            lblGame.Visible = !lblGame.Visible;
-        }
-
-        private void timer3_Tick(object sender, EventArgs e)
-        {
-            seconds++;
-            lblTime.Text = "Time passed: " + seconds;
-        }
 
         private void testLabel_Click(object sender, EventArgs e)
         {
-
+            //cant get rid of this idk
         }
         void ColorUpdate()
         {
