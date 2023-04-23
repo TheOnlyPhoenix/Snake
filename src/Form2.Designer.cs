@@ -30,26 +30,29 @@
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.lblPfdStn = new System.Windows.Forms.Label();
             this.lblFrtStn = new System.Windows.Forms.Label();
             this.lblSnkStn = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.btnSnkApply = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnResetSnk = new System.Windows.Forms.Button();
             this.tbStrtLength = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbSnkSpd = new System.Windows.Forms.TextBox();
-            this.tbSnkClr = new System.Windows.Forms.TextBox();
             this.tbSnkSize = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
             this.tbFrtGrowth = new System.Windows.Forms.TextBox();
             this.tbFrtCnt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -60,27 +63,45 @@
             this.btnFrtReset = new System.Windows.Forms.Button();
             this.tbFrtSpoil = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbFrtClr = new System.Windows.Forms.TextBox();
             this.tbFrtSize = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.colorDialog2 = new System.Windows.Forms.ColorDialog();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblScaleNum = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.label18 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.colorDialog3 = new System.Windows.Forms.ColorDialog();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel4.Controls.Add(this.button7);
+            this.panel4.Controls.Add(this.button6);
             this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.lblPfdStn);
             this.panel4.Controls.Add(this.lblFrtStn);
             this.panel4.Controls.Add(this.lblSnkStn);
             this.panel4.Controls.Add(this.label8);
-            this.panel4.Location = new System.Drawing.Point(32, 37);
+            this.panel4.Location = new System.Drawing.Point(13, 8);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(737, 376);
             this.panel4.TabIndex = 13;
@@ -91,31 +112,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Apply";
+            this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(37, 231);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 25);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "○";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(37, 194);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 25);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "○ e";
             // 
             // lblPfdStn
             // 
@@ -127,6 +126,7 @@
             this.lblPfdStn.Size = new System.Drawing.Size(183, 25);
             this.lblPfdStn.TabIndex = 4;
             this.lblPfdStn.Text = "○ Playfield settings";
+            this.lblPfdStn.Click += new System.EventHandler(this.lblPfdStn_Click);
             // 
             // lblFrtStn
             // 
@@ -166,23 +166,82 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.label19);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.btnSnkApply);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btnResetSnk);
             this.panel1.Controls.Add(this.tbStrtLength);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tbSnkSpd);
-            this.panel1.Controls.Add(this.tbSnkClr);
             this.panel1.Controls.Add(this.tbSnkSize);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Location = new System.Drawing.Point(32, 37);
+            this.panel1.Location = new System.Drawing.Point(13, 8);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(737, 376);
             this.panel1.TabIndex = 14;
             this.panel1.Visible = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(312, 236);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 17;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(37, 231);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(141, 25);
+            this.label19.TabIndex = 16;
+            this.label19.Text = "○ Invincibility:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Rainbow",
+            "Randomized"});
+            this.comboBox1.Location = new System.Drawing.Point(508, 119);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 15;
+            this.comboBox1.Visible = false;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(421, 122);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(86, 19);
+            this.checkBox1.TabIndex = 14;
+            this.checkBox1.Text = "Multi-color";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label17.Location = new System.Drawing.Point(312, 123);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(103, 15);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "Open Color Picker";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // btnSnkApply
             // 
@@ -238,13 +297,6 @@
             this.tbSnkSpd.Size = new System.Drawing.Size(58, 23);
             this.tbSnkSpd.TabIndex = 7;
             // 
-            // tbSnkClr
-            // 
-            this.tbSnkClr.Location = new System.Drawing.Point(312, 120);
-            this.tbSnkClr.Name = "tbSnkClr";
-            this.tbSnkClr.Size = new System.Drawing.Size(58, 23);
-            this.tbSnkClr.TabIndex = 6;
-            // 
             // tbSnkSize
             // 
             this.tbSnkSize.Location = new System.Drawing.Point(312, 83);
@@ -299,6 +351,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.tbFrtGrowth);
             this.panel2.Controls.Add(this.tbFrtCnt);
             this.panel2.Controls.Add(this.label10);
@@ -309,7 +362,6 @@
             this.panel2.Controls.Add(this.btnFrtReset);
             this.panel2.Controls.Add(this.tbFrtSpoil);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.tbFrtClr);
             this.panel2.Controls.Add(this.tbFrtSize);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label12);
@@ -319,6 +371,17 @@
             this.panel2.Size = new System.Drawing.Size(737, 376);
             this.panel2.TabIndex = 15;
             this.panel2.Visible = false;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label16.Location = new System.Drawing.Point(312, 124);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(103, 15);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "Open Color Picker";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // tbFrtGrowth
             // 
@@ -413,13 +476,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "○ Fruit spoil time:";
             // 
-            // tbFrtClr
-            // 
-            this.tbFrtClr.Location = new System.Drawing.Point(312, 120);
-            this.tbFrtClr.Name = "tbFrtClr";
-            this.tbFrtClr.Size = new System.Drawing.Size(58, 23);
-            this.tbFrtClr.TabIndex = 6;
-            // 
             // tbFrtSize
             // 
             this.tbFrtSize.Location = new System.Drawing.Point(312, 83);
@@ -460,14 +516,169 @@
             this.label13.TabIndex = 0;
             this.label13.Text = "Fruit Settings";
             // 
+            // colorDialog1
+            // 
+            this.colorDialog1.Color = System.Drawing.Color.Lime;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Controls.Add(this.lblScaleNum);
+            this.panel3.Controls.Add(this.trackBar1);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.label21);
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.label24);
+            this.panel3.Controls.Add(this.label25);
+            this.panel3.Location = new System.Drawing.Point(13, 8);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(737, 376);
+            this.panel3.TabIndex = 16;
+            this.panel3.Visible = false;
+            // 
+            // lblScaleNum
+            // 
+            this.lblScaleNum.AutoSize = true;
+            this.lblScaleNum.Location = new System.Drawing.Point(388, 91);
+            this.lblScaleNum.Name = "lblScaleNum";
+            this.lblScaleNum.Size = new System.Drawing.Size(19, 15);
+            this.lblScaleNum.TabIndex = 20;
+            this.lblScaleNum.Text = "1x";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.trackBar1.Location = new System.Drawing.Point(301, 75);
+            this.trackBar1.Maximum = 7;
+            this.trackBar1.Minimum = 1;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(81, 45);
+            this.trackBar1.TabIndex = 19;
+            this.trackBar1.Value = 4;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label18.Location = new System.Drawing.Point(312, 124);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 15);
+            this.label18.TabIndex = 18;
+            this.label18.Text = "Open Color Picker";
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(312, 157);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(58, 23);
+            this.textBox2.TabIndex = 17;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(37, 157);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(245, 25);
+            this.label21.TabIndex = 16;
+            this.label21.Text = "○ Snake starting position:";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(37, 313);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(107, 23);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Apply";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(150, 313);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(107, 23);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Go back";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(263, 313);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(107, 23);
+            this.button5.TabIndex = 10;
+            this.button5.Text = "Reset to Defaults";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label23.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(37, 120);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(178, 25);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "○ Playfield colour:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label24.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(37, 83);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(180, 25);
+            this.label24.TabIndex = 1;
+            this.label24.Text = "○ Playfield scaling:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(37, 37);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(212, 32);
+            this.label25.TabIndex = 0;
+            this.label25.Text = "Playfield Settings";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(118, 284);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "Save to file";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(199, 284);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(90, 23);
+            this.button7.TabIndex = 9;
+            this.button7.Text = "Load from file";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(761, 392);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -479,6 +690,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -486,8 +700,6 @@
         #endregion
 
         private Panel panel4;
-        private Label label3;
-        private Label label6;
         private Label lblPfdStn;
         private Label lblFrtStn;
         private Label lblSnkStn;
@@ -501,7 +713,6 @@
         private TextBox tbStrtLength;
         private Label label1;
         private TextBox tbSnkSpd;
-        private TextBox tbSnkClr;
         private TextBox tbSnkSize;
         private Button button1;
         private Button button2;
@@ -512,7 +723,6 @@
         private Button btnFrtReset;
         private TextBox tbFrtSpoil;
         private Label label2;
-        private TextBox tbFrtClr;
         private TextBox tbFrtSize;
         private Label label11;
         private Label label12;
@@ -522,5 +732,28 @@
         private TextBox tbFrtCnt;
         private Label label10;
         private Label label15;
+        private Label label16;
+        public ColorDialog colorDialog1;
+        private Label label17;
+        private ColorDialog colorDialog2;
+        private Panel panel3;
+        private Label label18;
+        private TextBox textBox2;
+        private Label label21;
+        private Button button3;
+        private Button button4;
+        private Button button5;
+        private Label label23;
+        private Label label24;
+        private Label label25;
+        private ColorDialog colorDialog3;
+        private TrackBar trackBar1;
+        private Label lblScaleNum;
+        private CheckBox checkBox1;
+        private ComboBox comboBox1;
+        private CheckBox checkBox2;
+        private Label label19;
+        private Button button7;
+        private Button button6;
     }
 }
